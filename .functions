@@ -221,9 +221,11 @@ function a() {
 # given location
 function v() {
 	if [ $# -eq 0 ]; then
-		vim .;
+		#vim .;
+		$EDITOR .;
 	else
-		vim "$@";
+		#vim "$@";
+		$EDITOR "$@";
 	fi;
 }
 
