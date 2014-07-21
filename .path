@@ -1,0 +1,14 @@
+# Setting PATH for Python 3.4
+# The orginal version is saved in .bash_profile.pysave
+PATH="/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
+
+source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
+#PS1="\[\033[37m\]\u\[\\033[0m\]\[\033[1m\]\w\[\\033[0m\]\[\033[1;36m\]\$(__git_ps1)\[\\033[0m\]\[\033[37m\]$\[\\033[0m\] "
+
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
+
+#alias ll="ls -la"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

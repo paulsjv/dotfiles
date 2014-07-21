@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/Jay'
+let g:netrw_dirhist_2='/Users/Jay/git'
+let g:netrw_dirhist_3='/Users/Jay/git/cm'
+let g:netrw_dirhist_4='/Users/Jay/git/cm/forks'
+let g:netrw_dirhist_5='/Users/Jay/git/cm/forks/display-v3'
