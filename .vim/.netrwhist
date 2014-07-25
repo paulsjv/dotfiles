@@ -1,10 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/Jay'
-let g:netrw_dirhist_2='/Users/Jay/git'
-let g:netrw_dirhist_3='/Users/Jay/git/cm'
-let g:netrw_dirhist_4='/Users/Jay/git/cm/forks'
-let g:netrw_dirhist_5='/Users/Jay/git/cm/forks/display-v3'
-let g:netrw_dirhist_6='/Users/Jay/dotfiles'
-let g:netrw_dirhist_7='/Users/Jay'
-let g:netrw_dirhist_8='/Users/Jay/dotfiles'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/Jay/git/cm/forks/display-v3'
+let g:netrw_dirhist_2='/Users/Jay/git/cm/forks/display-v3/entry'
+let g:netrw_dirhist_3='/Users/Jay/git/cm/forks/config-builder'
+let g:netrw_dirhist_4='/Users/Jay/git/cm/forks/config-builder/env'
