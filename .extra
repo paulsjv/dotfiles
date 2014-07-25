@@ -1,20 +1,34 @@
 # Starts Elastic Search locally on port 9200 
-function es() { 
-	echo "Starting Elastic Search on port 9200"
+esport=9200
+function ses() { 
+	echo "Starting Elastic Search on port $esport"
 	pushd ~/projects/elasticsearch-1.3.0/bin
-	./elasticsearch  
+	./elasticsearch & 
 	popd
 }
+function kes() {
+	kill `lsof -n -i4TCP:9200 | grep LISTEN` >/dev/null 2>&1
+}
+
 runlocal=~/git/cm/forks/utilities/RunV3Locally
 function kstack() {
 	$runlocal/killstack.sh
+	kes
 }
 function sstack() {
-	$runlocal/runstack.sh $runlocal/stack.config
+	ses
+	pushd $runlocal
+	./runstack.sh ./stack.config
+	popd
 }
 function bstack() {
-	$runlocal/compare.sh
+	pushd $runlocal
+	./compare.sh
+	popd
 }
 function estack() {
 	$EDITOR $runlocal/stack.config
+}
+function cdstack() {
+	cd $runlocal
 }
