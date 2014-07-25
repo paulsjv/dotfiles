@@ -5,3 +5,16 @@ function es() {
 	./elasticsearch  
 	popd
 }
+runlocal=~/git/cm/forks/utilities/RunV3Locally
+function kstack() {
+	$runlocal/killstack.sh
+}
+function sstack() {
+	$runlocal/runstack.sh $runlocal/stack.config
+}
+function bstack() {
+	$runlocal/compare.sh
+}
+function estack() {
+	$EDITOR $runlocal/stack.config
+}
