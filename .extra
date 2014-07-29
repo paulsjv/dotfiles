@@ -7,7 +7,7 @@ function ses() {
 	popd
 }
 function kes() {
-	kill `lsof -n -i4TCP:9200 | grep LISTEN` >/dev/null 2>&1
+	kill `lsof -n -i4TCP:$esport | grep LISTEN` >/dev/null 2>&1
 }
 
 runlocal=~/git/cm/forks/utilities/RunV3Locally
@@ -31,4 +31,7 @@ function estack() {
 }
 function cdstack() {
 	cd $runlocal
+}
+function cstack() {
+	ps	
 }
