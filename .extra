@@ -13,10 +13,10 @@ function kes() {
 runlocal=~/git/cm/forks/utilities/RunV3Locally
 function kstack() {
 	$runlocal/killstack.sh
-	kes
+	#kes
 }
 function sstack() {
-	ses
+	#ses
 	pushd $runlocal
 	./runstack.sh ./stack.config
 	popd
