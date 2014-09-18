@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/Jay/git/cm/satish/pixeldustetl/module'
-let g:netrw_dirhist_2='/Users/Jay/git/cm/satish/pixeldustetl'
-let g:netrw_dirhist_3='/Users/Jay/git/cm/satish/pixeldustetl/module'
-let g:netrw_dirhist_4='/Users/Jay/git/cm/satish/pixeldustetl'
-let g:netrw_dirhist_5='/Users/Jay/git/cm/satish/pixeldustetl/module'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/Jay/git/cm/forks/utilities/RunV3Locally/v3/build/config-assets'
+let g:netrw_dirhist_2='/Users/Jay/git/cm/forks/utilities/RunV3Locally/v3/build'
+let g:netrw_dirhist_3='/Users/Jay/git/cm/forks/utilities/RunV3Locally/v3'
+let g:netrw_dirhist_4='/Users/Jay/git/cm/forks/utilities/RunV3Locally/v3/config-assets'
+let g:netrw_dirhist_5='/Users/Jay/git/cm/forks/utilities/RunV3Locally/v3/config-assets/neimanmarcus'
+let g:netrw_dirhist_6='/Users/Jay/git/cm/forks/satish/utilities/RunV3Locally'

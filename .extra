@@ -35,3 +35,6 @@ function cdstack() {
 function cstack() {
 	ps	
 }
+function bapp() {
+	node ~/git/cm/forks/display-v3/optimize/app.js --write ~/git/cm/forks/display-v3/build --optimizer none
+}
