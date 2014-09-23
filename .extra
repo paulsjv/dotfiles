@@ -37,4 +37,5 @@ function cstack() {
 }
 function bapp() {
 	node ~/git/cm/forks/display-v3/optimize/app.js --write ~/git/cm/forks/display-v3/build --optimizer none
+	#curl localhost:8000/build-display.sh | bash
 }
