@@ -1,3 +1,6 @@
+[user]
+    email = paulsjv@gmail.com 
+    name = Jay Paulson
 [alias]
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
@@ -5,6 +8,12 @@
 
 	# View the current working tree status using the short format
 	s = status -s
+
+	# shorter checkout
+    co = checkout
+
+	# shorter status
+    st = status
 
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
