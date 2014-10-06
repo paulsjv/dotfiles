@@ -1,3 +1,13 @@
+# Git Command Shortcuts
+This gets a diff of a file creates a patch file and then applies the changes to the file.
+```git diff <branch>^..<branch> -- <filename> | git apply
+```
+Example:
+```git diff master..origin/master .vimrc | git apply
+```
+
+
+
 # Mathias’s dotfiles
 
 ![Screenshot of my shell prompt](http://i.imgur.com/EkEtphC.png)
