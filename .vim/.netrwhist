@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/paulsjv/dotfiles'
-let g:netrw_dirhist_2='/Users/paulsjv/git/leansheets'
-let g:netrw_dirhist_3='/Users/paulsjv/git/leansheets/app'
-let g:netrw_dirhist_4='/Users/paulsjv/git/leansheets/app/js'
-let g:netrw_dirhist_5='/Users/paulsjv/git/leansheets/app/js/directives'
-let g:netrw_dirhist_6='/Users/paulsjv/git/leansheets/app/js'
-let g:netrw_dirhist_7='/Users/paulsjv/git/leansheets/app'
-let g:netrw_dirhist_8='/Users/paulsjv/git/leansheets/app/lib'
-let g:netrw_dirhist_9='/Users/paulsjv/git/leansheets/app/lib/nvd3-directive'
