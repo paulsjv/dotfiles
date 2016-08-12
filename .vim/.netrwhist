@@ -1,3 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/paulsjv/dotfiles'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/paulsjv/git/2.0/leansheets/www'
+let g:netrw_dirhist_2='/Users/paulsjv/git/2.0/leansheets/www/js'
