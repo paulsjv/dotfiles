@@ -1,0 +1,34 @@
+# Get latest container ID
+alias dl="docker ps -l -q"
+
+# Get container process
+alias dps="docker ps"
+
+# Get process included stop container
+alias dpa="docker ps -a"
+
+# Get images
+alias di="docker images"
+
+# Get container IP
+alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+
+# Show all alias related docker
+dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
+
+# Enter a container
+dent() { docker exec -i -t $1 /bin/bash; }
+
+# Stop all containers, remove all containers, remove all images with <none>
+dclean() {
+  docker stop $(docker ps -a -q);
+  docker rm $(docker ps -q -a);
+  docker rmi $(docker images | grep "^<none>" | awk "{print $3}");  
+}
+
+# Stop all containers, remove all containers, remove all images
+dnuke() {
+  docker stop $(docker ps -a -q);
+  docker rm $(docker ps -q -a);
+  docker rmi $(docker images -q);
+}

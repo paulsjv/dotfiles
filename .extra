@@ -1,0 +1,29 @@
+function setgopath() {
+	if [ -d "$1" ]; then
+		export GOPATH=$1
+		echo "GOPATH set to: $GOPATH"
+	else
+		echo "Can't set GOPATH because directory doesn't exist"
+	fi	
+}
+
+function gop() {
+	cd $GOPATH
+}
+
+function gocd () { 
+	cd `go list -f '{{.Dir}}' $1` 
+}
+
+# Set Triton's environment
+function tenv() {
+	eval "$(triton env --docker ${1})"
+	docker info
+}
+
+source ~/.docker-cli
+source ~/.docker-machine
+source ~/.docker-compose
+source ~/.triton-cli
+
+export HOMEBREW_GITHUB_API_TOKEN="7425feb3552ad61f6cc51bee8efad8bb2d0adb1e"

@@ -1,0 +1,17 @@
+alias dc="docker-compose"
+alias dcb='docker-compose build'
+alias dcup='docker-compose up'
+alias dcr='docker-compose run --service-ports --rm'
+alias dcrl='docker-compose run --service-ports --rm local'
+alias dcrd='docker-compose run --service-ports --rm develop'
+alias dcrt='docker-compose run --rm test'
+alias dcrp='docker-compose run --rm provision'
+alias dcrci='docker-compose run --rm ci'
+alias dcrwt='docker-compose run --rm watchtest'
+alias dcps='docker-compose ps'
+alias dclogs='docker-compose logs'
+
+dcrm(){
+	docker-compose stop $1
+	docker-compose rm --force $1
+}

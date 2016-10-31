@@ -1,0 +1,4 @@
+alias t="triton"
+
+source ~/.triton.completion
+

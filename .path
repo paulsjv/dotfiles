@@ -1,0 +1,4 @@
+# if ~/.path exists, it will be sourced along with the other files, before any feature testing (such as detecting which version of ls is being used) takes place.
+
+# Here’s an example ~/.path file that adds ~/utils to the $PATH:
+# export PATH="$HOME/utils:$PATH"
