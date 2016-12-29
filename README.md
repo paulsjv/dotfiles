@@ -1,9 +1,22 @@
+# Custom additions for HomePay
+Add the following symbolic links to `/usr/local/bin`
+```
+ln -s ~/dotfiles/bin/jq-osx-amd64 /usr/local/bin
+ln -s ~/dotfiles/bin/vault /usrlocal/bin
+```
+Next add any aliases to the `.alias` file.
+```
+alias jq="jq-osx-amd64"
+```
+
 # Git Command Shortcuts
 This gets a diff of a file creates a patch file and then applies the changes to the file.
-```git diff <branch>^..<branch> -- <filename> | git apply
+```
+git diff <branch>^..<branch> -- <filename> | git apply
 ```
 Example:
-```git diff master..origin/master .vimrc | git apply
+```
+git diff master..origin/master .vimrc | git apply
 ```
 
 
@@ -118,3 +131,4 @@ Suggestions/improvements
 * [Kevin Suttle](http://kevinsuttle.com/) and his [dotfiles repository](https://github.com/kevinSuttle/dotfiles) and [OSXDefaults project](https://github.com/kevinSuttle/OSXDefaults), which aims to provide better documentation for [`~/.macos`](https://mths.be/macos)
 * [Haralan Dobrev](http://hkdobrev.com/)
 * anyone who [contributed a patch](https://github.com/mathiasbynens/dotfiles/contributors) or [made a helpful suggestion](https://github.com/mathiasbynens/dotfiles/issues)
+
